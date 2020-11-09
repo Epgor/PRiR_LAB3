@@ -5,7 +5,7 @@ import java.io.File;
 
 public class Jull extends Thread {
 
-    final static int N = 4096;
+    final static int N = 8192;
     final static int CUTOFF = 100;
     static int[][] set = new int[N][N];
 
@@ -111,8 +111,8 @@ public class Jull extends Thread {
         {
             for (int j = 0; j < N; j++)
             {
-                double C_r = -0.73;
-                double ci = 0.19;
+                double C_r = -0.1;
+                double ci = 0.65;
                 double Z_r = i * (1.25 - -1.25) / N + -1.25;
                 double Z_i = j * (1.25 - -1.25) / N + -1.25;
                 int k = 0;
